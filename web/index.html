@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#ffffff">
+  <title>유승준 — 포트폴리오</title>
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <script defer src="vendor/splitting.min.js"></script>
+  <script defer src="scripts/portfolio.js"></script>
+</head>
+<body>
+  <svg class="icon-bank" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol><symbol id="icon-tistory" viewBox="0 0 24 24"><path d="M0 3a3 3 0 1 0 6 0 3 3 0 0 0-6 0m9 18a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0-9a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0-9a3 3 0 1 0 6 0 3 3 0 0 0-6 0m9 0a3 3 0 1 0 6 0 3 3 0 0 0-6 0"/></symbol><symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol><symbol id="icon-gmail" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></symbol><symbol id="icon-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 5v15" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol></defs></svg>
+  <header class="mast"><div class="mast-inner">
+    <a class="signature" href="#intro" aria-label="유승준 소개">utact<span>.</span></a>
+    <nav aria-label="주 메뉴"><a href="#intro" aria-current="location">소개</a><a href="#career">경력</a><a href="#experience">프로젝트</a><a href="#writing">블로그</a><a href="#background">이력</a><a href="#credentials">수상</a></nav>
+  </div><div class="section-ruler" role="navigation" aria-label="섹션 바로가기" hidden></div><div class="reading-progress" role="progressbar" aria-label="페이지 스크롤 위치" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden></div></header>
+  <main>
+    <section id="intro" class="paper" aria-labelledby="name"><div class="wrap hero">
+      <div class="portrait-window"><img id="portrait" src="assets/profile/portrait.webp" width="879" height="1100" alt="소개글을 향해 손을 편 유승준" fetchpriority="high"></div>
+      <div class="intro-copy">
+        <p class="role" lang="en">Software Engineer</p>
+        <h1 id="name">유승준</h1>
+        <p class="lead">현업의 업무를 이해하고,<br>운영할 수 있는 서비스로 만듭니다.</p>
+        <p class="bio">삼성전자 연계 프로젝트에서 현업 엔지니어들과 함께 세 부서의 기지국 시험 기록을 하나의 표준으로 연결했습니다. 알고리즘 학습 플랫폼 대시허브를 기획·개발하고, 직접 구축한 홈 서버에서 일평균 93명이 쓰는 서비스를 운영했습니다.</p>
+        <div class="links"><a href="https://www.linkedin.com/in/utact"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-linkedin"></use></svg>LinkedIn</a><a href="https://funczun.tistory.com/"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-tistory"></use></svg>기술 블로그</a><a href="https://github.com/utact" target="_blank" rel="noopener noreferrer"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg>GitHub</a><a href="mailto:dev.utact@gmail.com"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-gmail"></use></svg>이메일</a></div>
+      </div>
+    </div></section>
+    <section id="timeline" class="timeline dark" aria-labelledby="timeline-title"><div class="wrap">
+<div class="chron-head"><div><h2 id="timeline-title">타임라인</h2><p class="as-of">2026년 11월 기준</p></div></div>
+<div class="period-panel" id="all-range" data-origin="2015-01" data-end="2026-11">
+
+  <ol class="chron-events">
+    <li class="tone-school secondary-event earlier-event" data-start="2015-03" data-end="2018-02">
+      <div class="row-name"><small>학력</small><strong>세광고등학교</strong></div>
+      <span class="row-date">2015.03 — 2018.02</span>
+    </li>
+    <li class="tone-university earlier-event" data-start="2018-03" data-end="2023-02">
+      <a class="row-name" href="#hnu"><small>학력</small><strong>한남대학교 경영학과 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2018.03 — 2023.02</span>
+    </li>
+    <li class="tone-service secondary-event earlier-event" data-start="2019-05" data-end="2021-03">
+      <a class="row-name" href="#service"><small>병역</small><strong>공군 병장 전역 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2019.05 — 2021.03</span>
+    </li>
+    <li class="tone-cafe" data-start="2022-02" data-end="2025-05">
+      <a href="#cafe" class="row-name"><small>활동</small><strong>건즈업 모바일 카페 개설·운영 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2022.02 — 2025.05</span>
+    </li>
+    <li class="tone-degree" data-start="2023-03" data-end="2025-08">
+      <a class="row-name" href="#cnu"><small>학력</small><strong>충남대학교 경영학과 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2023.03 — 2025.08</span>
+    </li>
+    <li class="tone-activity secondary-event" data-start="2024-11">
+      <a href="#writing" class="row-name"><small>활동</small><strong>기술 블로그 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2024.11부터</span>
+    </li>
+    <li class="tone-award secondary-event" data-start="2024-12">
+      <a href="#cert-sqld" class="row-name"><small>자격</small><strong>SQLD <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2024.12</span>
+    </li>
+    <li class="tone-activity" data-start="2025-02" data-end="2025-08">
+      <a href="#club" class="row-name"><small>활동</small><strong>멋쟁이사자처럼 13기 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2025.02 — 2025.08</span>
+    </li>
+    <li class="tone-award secondary-event" data-start="2025-03">
+      <a href="#cert-adsp" class="row-name"><small>자격</small><strong>ADsP <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2025.03</span>
+    </li>
+    <li class="tone-training" data-start="2025-07" data-end="2026-06">
+      <a class="row-name" href="#ssafy"><small>교육</small><strong>삼성 청년 SW·AI 아카데미 14기 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2025.07 — 2026.06</span>
+    </li>
+    <li class="tone-project featured-event" data-start="2025-11" data-end="2026-04">
+      <a href="#dash" class="row-name"><small>프로젝트</small><strong>대시허브 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2025.11 — 2026.04</span>
+    </li>
+    <li class="tone-award secondary-event" data-start="2026-01">
+      <a href="#cert-opic" class="row-name"><small>어학</small><strong>OPIc IM1 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2026.01.18</span>
+    </li>
+    <li class="tone-project featured-event" data-start="2026-02" data-end="2026-05">
+      <a href="#rf" class="row-name"><small>프로젝트</small><strong>기지국 RU의 RF 시험 데이터 중앙화 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2026.02 — 2026.05</span>
+    </li>
+    <li class="tone-work featured-event" data-start="2026-06" data-ongoing>
+      <a href="#coach" class="row-name"><small>경력</small><strong>멀티캠퍼스 AI 실습코치 <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2026.06 — 현재</span>
+    </li>
+    <li class="tone-project featured-event" data-start="2026-09" data-ongoing>
+      <a href="#nookeep" class="row-name"><small>프로젝트</small><strong>누킵 Nookeep <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2026.09 — 현재</span>
+    </li>
+    <li class="tone-project" data-start="2026-10" data-ongoing>
+      <a href="#consult" class="row-name"><small>프로젝트</small><strong>실업급여 상담 AI <b aria-hidden="true">↘</b></strong></a>
+      <span class="row-date">2026.10 — 현재</span>
+    </li>
+  </ol>
+</div>
+</div></section>
+    <section id="career" class="dark" aria-labelledby="career-title"><div class="wrap career-layout">
+      <h2 id="career-title">경력</h2>
+      <article id="coach" class="career-entry">
+        <header class="coach-heading"><div class="coach-employer"><img loading="lazy" src="assets/organizations/multicampus-wordmark.webp" alt="멀티캠퍼스" width="151" height="24"><h3>AI 실습코치</h3></div><div class="coach-tenure"><p>삼성 청년 SW·AI 아카데미</p><time datetime="2026-06">2026.06 — 현재</time></div></header>
+        <section class="career-feature career-plugin" aria-labelledby="plugin-title">
+          <div class="plugin-overview">
+            <div><h4 id="plugin-title">Mattermost 정기 공지 플러그인</h4>
+              <p>등록한 공지는 플러그인이 정해진 시간에 다시 게시하므로, 운영자가 같은 공지를 매번 다시 쓸 필요가 없어졌습니다. 교육생은 매일 정해진 시간에 올라오는 게시물에서 그날 유효한 공지사항을 한눈에 보고, 원문과 첨부파일도 확인할 수 있습니다.</p>
+              <p class="plugin-status">멀티캠퍼스 담당자와 유저테스트 중</p></div>
+            <figure class="plugin-demo"><div class="plugin-demo-frame"><span>플러그인 시연 화면</span></div></figure>
+          </div>
+          <section class="career-story"><h5><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m6 0h4"/></svg>AI 에이전트 개발 환경 설계</h5>
+            <div class="story-columns"><div class="story-copy">
+              <p>Go 경험이 없는 팀을 이끌면서 삼성SDS 담당자에게 운영 환경을 확인하고, 같은 버전의 Mattermost 개발 서버를 구성했습니다.</p>
+              <p>정기 게시 요청에서 공지사항 관리 요구사항 <strong>12개</strong>를 도출했습니다. 날짜만 받을지 시각까지 받을지처럼 정책 결정이 필요한 사항은 선택지와 장단점을 담당자에게 제시했습니다. 확정한 동작은 <strong>22개 시나리오</strong>로 작성해 팀과 AI 에이전트가 구현·검토 기준을 공유했습니다.</p>
+            </div><div class="story-evidence"><h6>검증 시나리오 예시 · 중복 등록</h6>
+              <dl class="spec-example">
+                <div><dt lang="en">Given</dt><dd>한 게시물이 이미 유효한 공지로 등록된 상태</dd></div>
+                <div><dt lang="en">When</dt><dd>운영자가 같은 게시물을 다시 등록</dd></div>
+                <div><dt lang="en">Then</dt><dd>중복 등록 요청 거부</dd></div>
+              </dl>
+            </div></div>
+            <ul class="engineering-decisions">
+              <li><b>결정 근거 공유</b>팀원과 AI 에이전트가 이전 결정의 이유를 찾을 수 있도록 기여 가이드와 에이전트 지침에 기록 규칙을 정했습니다. GitHub 이슈 템플릿에는 선택지와 장단점을, PR 템플릿에는 관련 요구사항과 검증 결과를 남기도록 했습니다.</li>
+              <li><b>PR 자동 검사</b>코드는 <code>golangci-lint</code>로 검사하고, 명세는 Given–When–Then 형식을 확인하도록 GitHub Actions를 구성했습니다. PR 제목에도 커밋 규칙(Conventional Commits)을 적용했습니다.</li>
+              <li><b>문서와 코드의 불일치 검출</b>코드가 바뀐 뒤 에이전트가 참고하는 문서에 예전 값이 남았습니다. Markdown 주석에 소스 경로와 상수명을 기록하고, Go 구문 트리(AST)에서 읽은 정수 값과 대조했습니다. 값이 다르거나 파일이 사라지면 PR 검사가 실패합니다.</li>
+            </ul>
+          </section>
+          <section class="career-story"><h5><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 3v11m-4-4 4 4 4-4M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6"/></svg>재가동을 고려한 공지사항 이관</h5>
+            <div class="story-columns"><div class="story-copy">
+              <p>도입 전 공지를 어떻게 옮길지 묻는 담당자의 질문을 받고, <strong>플러그인을 다시 켜는 상황</strong>까지 고려했습니다. 운영 중 잠시 끄거나 오류로 중단된 동안에도 채널에는 공지가 올라옵니다. 재가동할 때도 여전히 유효한 글을 골라 등록할 수 있도록 이관 절차를 설계했습니다.</p>
+              <p>선별을 어디까지 자동화할 수 있을지 원글 <strong>459건</strong>을 조사했습니다. 최소 <strong>205건</strong>은 본문에 기한이 있었고, 설명 없이 이미지만 올린 글 10건 중 8건은 이미지에 기한이 있었습니다. 한 포스터에 모집 마감과 수업 일정이 함께 적힌 사례를 보고, 게시 종료일은 운영자가 확정하도록 했습니다.</p>
+            </div><div class="story-evidence"><h6>기존 글 등록 방식</h6>
+              <dl class="decision-list"><div><dt>현재 구현</dt><dd><ol class="import-steps">
+                <li>Mattermost API로 기존 게시물 조회</li>
+                <li>운영자가 원문과 첨부 확인</li>
+                <li>표시 종료일을 지정해 개별 등록</li>
+              </ol></dd></div>
+              <div><dt>확장 구상</dt><dd><ol class="import-steps">
+                <li>본문은 정규식으로, 이미지는 OCR로 날짜 후보 추출</li>
+                <li>날짜로 후보를 좁히고 운영자가 원문과 대조</li>
+                <li>종료일을 확인한 공지만 승인해 일괄 등록</li>
+              </ol></dd></div></dl>
+            </div></div>
+          </section>
+          <section class="career-story notice-study"><h5><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 3v17h17M8 16v-4m5 4V6m5 10V9"/></svg>공지 유형별 분석과 자동화 범위</h5>
+            <figure class="notice-baseline" id="notice-analysis">
+              <figcaption>
+                <div><strong>15기 전국 공지사항 채널</strong><span>한 기수 교육생 약 1,000명 · 공지사항 작성자 약 50명</span></div>
+                <div class="notice-total"><strong>499건</strong><span>도입 전 원글 459건 · 댓글 40건</span></div>
+              </figcaption>
+              <dl class="notice-types">
+                <div class="new-notice"><dt>신규 안내</dt>
+                  <dd class="notice-value"><b>49.1%</b><span class="notice-count">245건</span><i style="--share:49.1%" aria-hidden="true"></i></dd>
+                </div>
+                <div class="repeat"><dt>회차별 안내</dt>
+                  <dd class="notice-value"><b>33.3%</b><span class="notice-count">166건</span><i style="--share:33.3%" aria-hidden="true"></i></dd>
+                  <dd class="notice-use"><small>확장 구상</small><strong>회차별 작성 템플릿</strong>
+                    <p>교육지원금 서명 안내 12건 중 8건은 다음 달 서명을 요청하는 글이었습니다. 회차와 기한만 바꿔 초안을 만드는 방식을 구상했습니다.</p></dd>
+                </div>
+                <div class="remind"><dt>동일 사안 재안내</dt>
+                  <dd class="notice-value"><b>12.2%</b><span class="notice-count">61건</span><i style="--share:12.2%" aria-hidden="true"></i></dd>
+                  <dd class="notice-use"><small>구현 완료</small><strong>마감 전까지 자동 재안내</strong>
+                    <p>운영자가 직접 다시 알린 횟수는 주당 1.3건이었습니다. 등록한 공지사항은 종료일까지 정기 게시 목록에 자동으로 포함됩니다.</p></dd>
+                </div>
+                <div class="follow-up"><dt>결과·변경 안내</dt>
+                  <dd class="notice-value"><b>5.4%</b><span class="notice-count">27건</span><i style="--share:5.4%" aria-hidden="true"></i></dd>
+                </div>
+              </dl>
+              <p class="notice-footnote">캠퍼스별·트랙별·반별 채널 제외</p>
+            </figure>
+          </section>
+        </section>
+        <section class="career-feature project-coaching" id="project-coaching" aria-labelledby="coaching-title">
+          <header>
+            <h4 id="coaching-title"><span id="project-reviews">프로젝트 코칭</span></h4>
+            <p class="feature-scope">교육생 약 100명 대상 · 5개월간 누적 30개 프로젝트 코칭</p>
+          </header>
+          <ul class="coaching-studies" aria-label="프로젝트 코칭 사례">
+            <li>
+              <h5>클라이언트와 서버의 책임 분리</h5>
+              <p class="study-context">온라인 게임 서비스 <span>—</span> 전투 보상 로직</p>
+              <p>시연 중 전투 연출을 건너뛰자 30초가 지나기 전에 다음 보상을 받을 수 있었습니다. 팀이 해당 요청을 차단한 뒤에도 퍼센트 인코딩을 거친 요청은 통과하는 모습을 보여줬습니다.</p>
+              <p>연출 재생은 클라이언트에 맡기되, <strong>보상을 지급할 때마다 서버에서 직전 지급 후 30초가 지났는지 확인하도록</strong> 안내했습니다.</p>
+            </li>
+            <li>
+              <h5>사용자 행동에 따른 과금 시점 설계</h5>
+              <p class="study-context">디지털 다이어리 꾸미기 서비스 <span>—</span> 공동 이용과 구독 전환</p>
+              <p>사진 저장과 공동 편집 비용을 충당하려고 첫 이용부터 구독료를 받으면, 사용자는 다이어리를 한 번 꾸며 보기도 전에 결제해야 했습니다.</p>
+              <p>혼자 꾸민 다이어리는 기기에 무료로 저장하고, <strong>사용자가 다시 찾아오는지, 친구를 초대하면 더 오래 쓰는지</strong> 살펴보자고 제안했습니다. 더 많은 친구를 초대하거나 다른 꾸미기 아이템을 쓰고 싶을 때 구독을 제안하는 흐름입니다.</p>
+            </li>
+            <li id="pickers-coaching">
+              <h5>시장 반응을 활용한 수익 모델 탐색</h5>
+              <p class="study-context">촬영 구도 추천·포즈 공유 서비스 <span>—</span> 유료 기능 기획</p>
+              <p>추천 포즈는 미리 보기만 해도 따라 찍을 수 있고, 결제를 앞세우면 커뮤니티에 사진을 올릴 사람이 줄어들 수 있었습니다.</p>
+              <p><a href="https://www.instagram.com/reel/Dd8_gs8h8nC/">사진의 시점을 바꾸는 프롬프트를 소개한 릴스</a>가 21.8만 회 공유된 사례를 들어, <strong>인기 효과를 자기 사진에 바로 적용하는 필터</strong>를 제안했습니다.</p>
+              <p>이후 팀은 유행하는 프롬프트를 모아 필터 앱을 추가로 개발했습니다. 사진을 드론 시점으로 바꾸거나 배경의 계절을 바꾸는 효과를 담았습니다.</p>
+            </li>
+            <li>
+              <h5>담당자 의존도를 낮추는 작업 표준화</h5>
+              <p class="study-context">게임 서비스 <span>—</span> 팀 공용 AI 스킬 설계</p>
+              <p>팀원들은 AI 에이전트로 기능을 만드는 데 익숙했지만, 게임 에셋은 한 사람이 전담했습니다. 의상 부위에 맞는 참고 이미지를 고르고 결과물을 조합하는 법도 담당자만 알고 있었습니다.</p>
+              <p>팀원 누구나 필요한 에셋을 직접 만들 수 있도록 <strong>담당자의 제작 방법을 팀 공용 AI 스킬로 옮기자</strong>고 제안했습니다. 제작 순서와 참고 이미지를 함께 담고, 팀원들이 쓰던 에이전트에 제작 도구를 연결하는 방식입니다.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="career-feature technical-session" aria-labelledby="nl2sql-session">
+            <header class="session-heading"><div><h4 id="nl2sql-session">데이터 조회 챗봇의 응답 설계</h4><p class="feature-scope">교육생 50명 대상 기술 세션</p></div>
+              <a class="session-source" href="https://github.com/utact/nl2sql" target="_blank" rel="noopener noreferrer" aria-label="GitHub에서 NL2SQL 예제 코드 보기"><svg class="link-icon" aria-hidden="true"><use href="#icon-github"></use></svg>예제 코드</a>
+            </header>
+            <div class="session-layout">
+            <div class="session-copy">
+              <section>
+                <h5>SQL은 정상인데 기대한 응답은 아닙니다.</h5>
+                <p>실제 질문에는 개발자가 기대한 수준의 맥락이 담기기 어렵습니다. LLM이 빠진 조건을 잘못 짐작해도 SQL은 문법과 보안 검사를 통과해 실행될 수 있습니다. 쿼리는 모델이 해석한 대로 실행되므로 결과만 보고는 질문의 뜻이 어디서 달라졌는지 알아채기 어렵습니다.</p>
+              </section>
+              <section>
+                <h5>빠진 맥락을 매번 사용자에게 묻는다면 제품으로는 부족합니다.</h5>
+                <p>정보가 부족할 때 되묻도록 지시해도 모델은 때때로 추측해서 답합니다. 설령 되묻기를 보장하더라도, 사소한 조건까지 일일이 확인하면 사용자 경험(UX)이 나빠집니다. 그래서 사용자에게 묻기 전에 맥락을 보완하는 두 가지 방법을 소개했습니다. 로그인 세션에서 소속을 가져오는 방법과 사용자에 맞춰 프롬프트 예시를 고르는 동적 퓨샷입니다. 다만 세션에서 얻을 수 있는 정보는 제한적이고, 퓨샷에 쓸 예시는 미리 모아야 합니다.</p>
+              </section>
+              <section>
+                <h5>해석 가정을 먼저 보면 결과를 검토할 부담이 줄어듭니다.</h5>
+                <p>수치가 그럴듯하면 사용자는 의도와 다른 답도 그대로 받아들일 수 있습니다. 그래서 실제 쿼리의 조회 대상과 조건을 ‘해석 가정’으로 분리해 결과 위에 표시했습니다. 기준이 다르면 숫자를 하나씩 살펴볼 필요 없이 바로 질문을 고칠 수 있습니다.</p>
+              </section>
+            </div>
+            <figure class="semantic-flow" aria-labelledby="query-flow-title">
+              <figcaption><small>합성 데이터 예시</small><strong id="query-flow-title">시맨틱 레이어의 질의 처리</strong></figcaption>
+              <blockquote class="flow-question" data-flow-step>26년 5월, 불합격이 가장 많았던 검사 항목은?</blockquote>
+              <dl class="flow-sources">
+                <div data-flow-step><dt>질문 해석</dt><dd>26년 5월 항목별 불합격 건수 비교</dd></div>
+                <div data-flow-step><dt>로그인 세션</dt><dd>소속 라인 <b>L2</b></dd></div>
+                <div data-flow-step><dt>지표 카탈로그</dt><dd>규격 이탈 <b>1회 = 불합격 1건</b></dd></div>
+                <div data-flow-step><dt>컴파일러</dt><dd>지표와 조건으로 SQL 생성</dd></div>
+              </dl>
+              <dl class="flow-answer">
+                <div data-flow-step><dt>해석 가정</dt><dd>26년 5월 · L2 · 검사 항목별 불합격 건수</dd></div>
+                <div data-flow-step><dt>조회 결과</dt><dd>외경 <b>6건</b></dd></div>
+              </dl>
+            </figure>
+          </div>
+        </section>
+      </article>
+    </div></section>
+    <section id="experience" class="paper content" aria-labelledby="work-title"><div class="wrap">
+    <div class="project-heading"><h2 id="work-title">프로젝트</h2>
+      <ul class="project-index" aria-label="프로젝트 바로가기"><li><a href="#rf">기지국 RF 시험 데이터 중앙화</a></li><li><a href="#dash">대시허브</a></li><li><a href="#nookeep">누킵</a></li><li><a href="#consult">실업급여 상담 AI</a></li></ul></div>
+    <article class="project-case" id="rf" aria-labelledby="rf-title">
+     <p class="project-kicker">삼성전자 네트워크사업부 · SSAFY</p>
+     <div class="project-columns"><div class="project-text-column"><header class="project-intro"><h3 id="rf-title">기지국 RU의 RF 시험 데이터 중앙화</h3>
+         <p class="project-lead">디지털 트윈 구축의 첫 단계로, 세 부서에 흩어져 있던 기지국 무선장치(RU)의 RF 시험 기록을 제품별 검증 이력으로 통합했습니다. 엔지니어는 기존 엑셀 양식과 부서 시스템을 그대로 쓰면서 대시보드에서 같은 제품의 측정값을 부서별·시점별로 비교할 수 있습니다.</p><dl class="project-facts"><div><dt>기간</dt><dd>2026.02 — 2026.05</dd></div><div><dt>참여</dt><dd>6인 팀 · 수원사업장 상주</dd></div><div><dt>역할</dt><dd>팀장 · 백엔드 · AI</dd></div></dl></header><div class="project-tech"><div><div class="project-stack-list"><h4>사용 기술</h4><div class="tech-group"><p class="project-stack-label" id="rf-stack-existing">사내 웹</p><ul aria-labelledby="rf-stack-existing"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-0"><img loading="lazy" src="assets/stack/java.svg" width="16" height="16" alt="">Java 8</button><span class="tech-note" id="rf-tech-0" hidden><strong>Java 8</strong>사내 웹의 Java 8 실행 환경에 맞췄습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-1"><img loading="lazy" src="assets/stack/spring-boot.svg" width="16" height="16" alt="">Spring Boot</button><span class="tech-note" id="rf-tech-1" hidden><strong>Spring Boot</strong>사내 웹의 파일 등록 기능을 재사용해 RF 시험 기록에도 같은 파일 ID를 연결했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-4"><img loading="lazy" src="assets/stack/postgresql.svg" width="16" height="16" alt="">PostgreSQL</button><span class="tech-note" id="rf-tech-4" hidden><strong>PostgreSQL</strong>사내 웹에서 쓰던 DB에 시험 조건과 측정 결과를 저장했습니다.</span></li></ul></div><div class="tech-group"><p class="project-stack-label" id="rf-stack-added">RF 시험 데이터 처리</p><ul aria-labelledby="rf-stack-added"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-3"><img loading="lazy" src="assets/stack/fastapi.svg" width="16" height="16" alt="">FastAPI</button><span class="tech-note" id="rf-tech-3" hidden><strong>FastAPI</strong>엑셀 파서와 임베딩 모델을 Python에서 실행하고 Spring에서 호출할 수 있도록 API로 제공했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-6"><img loading="lazy" src="assets/stack/pandas.svg" width="16" height="16" alt="">pandas · calamine</button><span class="tech-note" id="rf-tech-6" hidden><strong>pandas · calamine</strong>calamine으로 엑셀을 열고 pandas로 시험 조건과 측정값을 행 단위로 변환했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-5"><img loading="lazy" src="assets/stack/embedding.svg" width="16" height="16" alt="">multilingual-e5</button><span class="tech-note" id="rf-tech-5" hidden><strong>multilingual-e5</strong>사전에 없는 항목명도 비교할 수 있도록 입력과 사전의 동의어를 임베딩해 유사도를 구했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="rf-tech-2"><img loading="lazy" src="assets/stack/spring.svg" width="16" height="16" alt="">WebClient</button><span class="tech-note" id="rf-tech-2" hidden><strong>WebClient</strong>Spring에서 파서의 NDJSON 응답을 스트림으로 받아 결과가 도착하는 대로 저장했습니다.</span></li></ul></div></div></div></div></div>
+     <div class="project-media-column"><div class="project-exhibit"><figure class="rf-plate rf-thread" aria-labelledby="rf-thread-title"><h4 id="rf-thread-title"><span>부서별 시험 기록을</span> <span>하나의 제품 이력으로</span></h4>
+          <ol><li><b>수집</b><span>기존 엑셀 · 부서 서버 API</span></li>
+          <li><b>표준화</b><span>3GPP TS 38.104 기준으로 항목명 통일</span></li>
+          <li><b>이력 연결</b><span>제품별 시험 조건과 측정값 연결</span></li>
+          <li><b>현업 활용</b><span>부서·시점별 비교 차트 · 엑셀 내보내기</span></li></ol></figure></div><div class="project-details"><details class="project-detail"><summary>요구사항과 설계</summary><div class="detail-copy"><ul class="case-list"><li><b>부서별 업무 방식에 맞춘 데이터 수집</b>세 부서의 검증 결과를 통합하는 과정에서 공통 양식을 도입하면 엔지니어가 이미 기록한 측정값을 다시 입력해야 했습니다. 첫 6주 동안 엔지니어들과 검증 절차를 확인하고 대상을 RU의 주요 RF 시험으로 좁혔습니다. 두 부서에서는 엔지니어가 작성하던 엑셀 파일을 그대로 받았고, 자체 서버를 운영하는 부서에서는 API로 결과를 수집했습니다. 엔지니어가 비교 결과를 기존 업무에 활용할 수 있도록 대시보드에서 조회한 결과도 엑셀로 내려받게 했습니다. 과제를 연장해 총 3개월간 개발했습니다.</li>
+<li><b>대시보드 제안에서 제품별 비교 요청까지</b>기존 양식을 써도 파일을 올리는 일은 엔지니어에게 추가 업무였습니다. 엔지니어도 검증 결과를 활용할 수 있도록 부서 간 측정값 차이와 같은 부서의 시점별 추이를 보여주는 대시보드를 제안했습니다. 프로토타입을 본 엔지니어들이 제품을 지정해 비교하고 싶다고 요청했고, 시험 기록에 제품 식별자를 연결해 같은 제품의 측정값을 모아 비교할 수 있도록 했습니다.</li></ul></div></details><details class="project-detail"><summary>구현 과정</summary><div class="detail-copy"><ul class="case-list"><li><b>입력 양식의 자유도 vs. 수치 판독의 정확도</b><p>한 셀에서 공백으로 열을 나누거나 표를 이미지로 붙인 파일까지 처리하려고 비전 언어 모델(VLM)을 검토했습니다. 로컬 환경의 메모리 제약을 고려해 실행 가능한 오픈소스 모델로 판독을 시험했습니다. 큰 표 이미지는 모델의 입력 한도에 맞춰 리사이징해야 했고, 이때 해상도가 낮아져 측정값을 잘못 읽었습니다. 원본 해상도를 유지하는 타일링도 시도했지만, 분할 경계가 표 중간을 지나면 머리글과 측정값의 대응 관계가 끊겼습니다. 검증 수치의 정확도를 우선해 지원 양식을 제한하고 엑셀 셀을 직접 읽기로 했습니다.</p><p>시트를 장비·시험 정보, 시험 조건, 측정 결과로 나눴습니다. 포트 목록의 머리글이 나오면 시험 조건이 시작되고, 시험 항목 목록의 머리글이 나오면 측정 결과가 시작됩니다. 한 시트에 표가 여러 개 있으면 다음 표가 시작되기 전까지만 해당 시험의 결과로 읽었습니다.</p></li>
+<li><b>RF 시험 데이터의 통합 기준 선정</b>같은 시험도 부서마다 다른 이름으로 기록해 측정값을 바로 비교하기 어려웠습니다. 현업 전문가의 자문을 받아 3GPP TS 38.104를 공통 기준으로 정했습니다. DB에는 원본 항목명과 표준 항목명을 함께 보존하고, 엑셀에서 추출한 측정값을 시험 조건·시험 기록·원본 파일에 연결했습니다.</li>
+<li><b>키워드 매칭 → 임베딩 비교 → LLM 폴백</b>제공받은 시험 기록에서 같은 항목을 다르게 표기한 사례를 모아 표준 항목 15종과 동의어 30개로 첫 매핑 사전을 만들었습니다. 사전에 있는 이름은 정규화 후 바로 매핑했습니다. 새 표기까지 포괄할 수 있도록 사전에 없는 이름은 multilingual-e5 임베딩의 코사인 유사도로 비교했습니다. 그래도 확정하기 어려운 항목은 관련 3GPP 문서 구절을 검색해 사내 LLM에 판단을 맡기고, 표준 목록에 있는 답만 채택하도록 했습니다. 첫 업로드가 모델 로딩을 기다리지 않도록 서버 시작 시 모델과 동의어 임베딩을 메모리에 준비해 요청 간에 재사용했습니다.</li>
+<li><b>계측기에서 확인한 ACLR·OBUE 측정 위치</b>시험 기록에는 같은 항목에 측정값이 여러 개 있었지만, 각각 어느 주파수에서 측정한 값인지는 표시돼 있지 않았습니다. 담당자와 계측기를 보며 이 시험에서 ACLR은 운용 채널의 낮은 쪽과 높은 쪽 각각 두 위치, OBUE는 각각 세 구간에 대응한다는 점을 확인했습니다. 파서에 기록된 순번을 차트의 주파수 축에 대응시켜 각 측정값을 해당 규격 한계값과 비교할 수 있게 했습니다.</li>
+<li><b>기존 파일 등록 기능과 RF 파서 연동</b>사내 웹에 FastAPI 서버를 처음 도입해 엑셀 파싱과 시험 항목 매핑을 맡겼습니다. 통합 과정에서 파일 등록 로직이 겹치는 부분을 정리해, RF 처리에서도 기존 업로드가 발급한 파일 ID를 사용하도록 했습니다. Spring Boot는 이 ID를 시험 기록에 연결하고 FastAPI가 반환한 측정 결과를 일괄 적재합니다.</li></ul></div></details><details class="project-detail"><summary>트러블슈팅</summary><div class="detail-copy"><section class="rf-issue" aria-labelledby="rf-speed"><h4 id="rf-speed">시험 결과 3만 건의 적재 병목</h4>
+          <figure class="rf-latency" aria-labelledby="rf-latency-caption"><figcaption id="rf-latency-caption">서버 처리 시간 <strong>25.7초 → 7.0초</strong> <small>약 73% 단축</small></figcaption>
+          <table aria-label="변경 단계별 서버 처리 시간"><thead><tr><th scope="col" class="rf-area">영역</th><th scope="col">누적 적용한 변경</th><th scope="col" class="rf-time">전체 시간</th><th scope="col" class="rf-time">직전 대비</th></tr></thead>
+          <tbody><tr><td class="rf-area"></td><th scope="row">변경 전</th><td class="rf-time">25.7초</td><td class="rf-time"></td></tr><tr><td class="rf-step-note" colspan="4"><i aria-hidden="true" style="--length:100.00%"></i></td></tr></tbody>
+          <tbody><tr><td class="rf-area"><span>결과 전송</span></td><th scope="row">1건 → 100건씩</th><td class="rf-time">14.3초</td><td class="rf-time">−11.4초</td></tr><tr><td class="rf-step-note" colspan="4"><small>NDJSON 메시지 약 3만 개 → 약 300개. 500건 묶음은 WebClient 버퍼 한도(256 KB) 초과.</small><i aria-hidden="true" style="--length:55.64%"></i></td></tr></tbody>
+          <tbody><tr><td class="rf-area"><span>DB 저장</span></td><th scope="row">개별 → 500건씩</th><td class="rf-time">12.8초</td><td class="rf-time">−1.5초</td></tr><tr><td class="rf-step-note" colspan="4"><small>JDBC 배치로 INSERT 일괄 전송. DB 커밋 시간은 별도 미측정.</small><i aria-hidden="true" style="--length:49.81%"></i></td></tr></tbody>
+          <tbody><tr><td class="rf-area"><span>임베딩</span></td><th scope="row">항목별 → 세션별 일괄 처리</th><td class="rf-time">8.8초</td><td class="rf-time">−4.0초</td></tr><tr><td class="rf-step-note" colspan="4"><small>세션별 고유 항목명 일괄 인코딩. 사전과의 유사도는 행렬 곱 한 번으로 계산.</small><i aria-hidden="true" style="--length:34.24%"></i></td></tr></tbody>
+          <tbody><tr><td class="rf-area"><span>엑셀 읽기</span></td><th scope="row">openpyxl → calamine</th><td class="rf-time">7.0초</td><td class="rf-time">−1.8초</td></tr><tr><td class="rf-step-note" colspan="4"><small>pandas 읽기 엔진 교체로 통합문서 열기 0.87초 → 0.12초.</small><i aria-hidden="true" style="--length:27.24%"></i></td></tr></tbody></table>
+          <p>엑셀 파일 1개(327.5 KiB) · 측정 결과 30,368건 · 동일 환경에서 단계별 1회</p></figure>
+        </section>
+        <section class="rf-issue" aria-labelledby="rf-mismatch"><h4 id="rf-mismatch">시험 항목 자동 매핑에서 드러난 임계값의 한계</h4>
+          <p>실제 시험 항목명을 입력해 매핑 결과를 확인하고, 유사도가 0.88 이상이면 해당 표준 항목으로 자동 연결하도록 했습니다.</p>
+          <p>적재 데이터를 점검하니 서로 다른 송신 전력 시험이 같은 표준 항목에 연결돼 있었습니다. 잘못 연결된 사례의 유사도는 0.8980, 올바르게 연결된 다른 사례는 0.8809였습니다. 전자를 걸러낼 만큼 기준을 올리면 후자까지 탈락합니다.</p>
+          <p>프로젝트 종료 후에는 서로 다른 표준 항목 후보의 1·2위 점수 차이도 비교하도록 매퍼를 수정했습니다. 두 후보의 점수가 가까우면 자동 확정을 보류합니다.</p>
+        </section></div></details></div></div></div>
+    </article>
+    <article class="project-case" id="dash" aria-labelledby="dash-title">
+     <p class="project-kicker">알고리즘 스터디 플랫폼</p>
+     <div class="project-columns"><div class="project-text-column"><header class="project-intro"><h3 id="dash-title">대시허브</h3>
+         <p class="project-lead">스터디원별 취약 유형을 분석해 팀의 학습 목표를 정하고, 풀이 해설로 코드 리뷰를 돕습니다. 혼자 풀다 막히면 AI 튜터에게 질문하기도 합니다. Raspberry Pi 5 홈 서버에서 운영했으며, 일평균 93명, 하루 최대 130명이 이용했습니다.</p><dl class="project-facts"><div><dt>기간</dt><dd>2025.11 — 2026.04</dd></div><div><dt>운영</dt><dd>2026.01 — 2026.04</dd></div><div><dt>참여</dt><dd>2인 개발 · 3인 유지보수</dd></div><div><dt>역할</dt><dd>팀장 · 백엔드 · AI</dd></div></dl></header><div class="project-tech"><div><div class="project-stack-list"><h4>사용 기술</h4><div class="tech-group"><p class="project-stack-label dash-stack-heading" id="dash-stack-0"><a href="https://github.com/dashhub-kr/dash-platform" target="_blank" rel="noopener noreferrer" aria-label="웹 서비스 GitHub 저장소" title="웹 서비스 GitHub 저장소"><svg class="link-icon" viewbox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg>웹 서비스</a></p><ul aria-labelledby="dash-stack-0"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-5"><img loading="lazy" src="assets/stack/vue.svg" width="16" height="16" alt="">Vue 3</button><span class="tech-note" id="dash-tech-5" hidden><strong>Vue 3</strong>미션 진행률과 풀이 기록을 대시보드에 표시했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-0"><img loading="lazy" src="assets/stack/java.svg" width="16" height="16" alt="">Java 17</button><span class="tech-note" id="dash-tech-0" hidden><strong>Java 17</strong>풀이 기록, 미션 진행률, 스터디 보상 로직을 구현했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-1"><img loading="lazy" src="assets/stack/spring-boot.svg" width="16" height="16" alt="">Spring Boot</button><span class="tech-note" id="dash-tech-1" hidden><strong>Spring Boot</strong>GitHub 로그인과 웹훅 수신을 맡고, 풀이 처리는 백그라운드 워커로 분리했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-2"><img loading="lazy" src="assets/stack/mybatis.webp" width="16" height="16" alt="">MyBatis</button><span class="tech-note" id="dash-tech-2" hidden><strong>MyBatis</strong>미션 제출 내역은 일괄 조회하고, 대시보드 히트맵은 SQL로 날짜별 풀이 건수를 집계했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-3"><img loading="lazy" src="assets/stack/mysql.svg" width="16" height="16" alt="">MySQL</button><span class="tech-note" id="dash-tech-3" hidden><strong>MySQL</strong>회원·스터디·풀이 기록을 저장하고 제출과 보상 데이터를 함께 관리했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-6"><img loading="lazy" src="assets/stack/fastapi.svg" width="16" height="16" alt="">FastAPI</button><span class="tech-note" id="dash-tech-6" hidden><strong>FastAPI</strong>코드 리뷰와 복잡도 분석을 Python API로 제공했습니다.</span></li></ul></div><div class="tech-group"><p class="project-stack-label dash-stack-heading" id="dash-stack-1"><a href="https://github.com/dashhub-kr/dash-extension" target="_blank" rel="noopener noreferrer" aria-label="Chrome 확장 프로그램 GitHub 저장소" title="Chrome 확장 프로그램 GitHub 저장소"><svg class="link-icon" viewbox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg>Chrome 확장 프로그램</a></p><ul aria-labelledby="dash-stack-1"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-7"><img loading="lazy" src="assets/stack/javascript.svg" width="16" height="16" alt="">JavaScript</button><span class="tech-note" id="dash-tech-7" hidden><strong>JavaScript</strong>백준과 SWEA의 제출 화면에서 코드와 채점 결과를 수집했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="dash-tech-4"><img loading="lazy" src="assets/stack/chrome.svg" width="16" height="16" alt="">Manifest V3</button><span class="tech-note" id="dash-tech-4" hidden><strong>Manifest V3</strong>콘텐츠 스크립트를 채점 사이트와 대시허브에 연결하고 백그라운드 작업을 서비스 워커로 실행했습니다.</span></li></ul></div></div></div></div></div>
+     <div class="project-media-column"><div class="project-exhibit"><figure class="project-gallery gallery-dash" aria-label="대시허브 서비스 화면">
+      <div class="gallery-stage"><div class="gallery-slide" data-caption="풀이 타임라인"><img src="assets/projects/dashhub/timeline-preview.webp" data-full-src="assets/projects/dashhub/timeline-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="같은 문제에서 두 번 실패한 뒤 성공한 제출 기록"></div>
+        <div class="gallery-slide" data-caption="AI 코드 리뷰" hidden><img src="assets/projects/dashhub/code-review-preview.webp" data-full-src="assets/projects/dashhub/code-review-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="정렬 기준을 설명하는 코드 툴팁과 시간 복잡도 분석"></div>
+        <div class="gallery-slide" data-caption="스터디 미션" hidden><img src="assets/projects/dashhub/missions-preview.webp" data-full-src="assets/projects/dashhub/missions-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="주차별 미션과 팀원별 문제 풀이 진행률"></div>
+        <div class="gallery-slide" data-caption="스터디 분석" hidden><img src="assets/projects/dashhub/study-analysis-preview.webp" data-full-src="assets/projects/dashhub/study-analysis-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="팀원의 유형별 역량을 비교한 차트와 스터디의 취약 유형"></div>
+        <div class="gallery-slide" data-caption="스킬 트리 · 학습 현황" hidden><img src="assets/projects/dashhub/skill-tree-preview.webp" data-full-src="assets/projects/dashhub/skill-tree-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="알고리즘 유형별 숙련도와 학습 중인 스킬"></div>
+        <div class="gallery-slide" data-caption="스킬 트리 · 전체 지도" hidden><img src="assets/projects/dashhub/skill-map-preview.webp" data-full-src="assets/projects/dashhub/skill-map-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="알고리즘 사이의 선수 관계를 연결한 전체 지도"></div>
+        <div class="gallery-slide" data-caption="스킬 트리 · 선수 관계" hidden><img src="assets/projects/dashhub/skill-detail-preview.webp" data-full-src="assets/projects/dashhub/skill-detail-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="다이나믹 프로그래밍을 중심으로 강조한 선수 및 후속 알고리즘"></div>
+        <div class="gallery-slide" data-caption="개인 학습 로드맵" hidden><img src="assets/projects/dashhub/roadmap-preview.webp" data-full-src="assets/projects/dashhub/roadmap-full.webp" width="1040" height="528" loading="lazy" decoding="async" alt="개인의 약점 유형에 따라 추천한 단계별 목표와 복습 문제"></div>
+        <button type="button" class="gallery-expand" aria-haspopup="dialog" aria-controls="dash-image-viewer" aria-label="현재 화면 확대" title="화면 확대" hidden><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button></div>
+      <figcaption class="gallery-caption"><span class="gallery-index">01 / 08</span><strong>풀이 타임라인</strong>
+      <div class="gallery-tools" hidden><button type="button" data-move="-1" aria-label="이전 화면">‹</button><button type="button" data-toggle aria-label="자동 전환 일시정지"><svg class="gallery-pause-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><rect x="3" y="2" width="3.5" height="12" rx=".7"/><rect x="9.5" y="2" width="3.5" height="12" rx=".7"/></svg><svg class="gallery-play-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M4 2.4v11.2L13 8z"/></svg></button><button type="button" data-move="1" aria-label="다음 화면">›</button></div></figcaption></figure><dialog id="dash-image-viewer" class="gallery-dialog" aria-labelledby="dash-view-title"><button type="button" data-dismiss aria-label="화면 축소" title="화면 축소" autofocus><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h5V4m6 0v5h5M4 15h5v5m6 0v-5h5"/></svg></button><div class="dash-view-frame"><img class="gallery-view-image" alt=""></div><div class="gallery-view-bar"><span class="gallery-view-count"></span><strong id="dash-view-title"></strong>
+<button type="button" data-step="-1" aria-label="이전 화면"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6-6 6 6 6"/></svg></button><button type="button" data-step="1" aria-label="다음 화면"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m10 6 6 6-6 6"/></svg></button></div></dialog></div><div class="project-details"><details class="project-detail"><summary>기획 배경</summary><div class="detail-copy"><ul class="case-list"><li><b>스터디는 문제를 고르는 일부터 어려웠습니다</b>다음에 풀 문제를 정할 때면 각자 solved.ac 티어부터 말했습니다. solved.ac를 쓰지 않는 팀원도 있었고, 같은 티어라도 그래프에 강한 사람과 동적 계획법에 강한 사람이 달랐습니다. 각자 어떤 유형에서 막히는지 알아야 함께 연습할 문제도 고를 수 있었습니다.</li><li><b>풀이를 공유해도 리뷰는 'LGTM'으로 끝났습니다</b>문제를 푼 뒤 코드를 커밋하고 PR을 올리는 데 시간이 들었습니다. 리뷰하는 사람도 낯선 변수명과 함수의 의도를 파악해야 해서 승인 한 줄로 끝내기 일쑤였습니다. 특히 틀린 풀이가 빠지면 어디서 막혔는지 함께 이야기할 기회도 사라졌습니다.</li></ul></div></details><details class="project-detail"><summary>구현 과정</summary><div class="detail-copy"><ul class="case-list"><li><b>solved.ac Bio로 계정 소유 확인</b>GitHub 로그인만으로는 입력한 solved.ac 계정의 소유자를 알 수 없습니다. 사용자가 프로필의 Bio에 자신의 GitHub 아이디가 담긴 확인 문구를 넣으면, 서버가 해당 프로필을 조회해 풀이 통계를 연결합니다.</li><li><b>개인별 취약 유형에서 스터디 커리큘럼까지</b>solved.ac 풀이 이력을 알고리즘 유형별로 분석해 개인의 강점과 약점을 보여줍니다. 스터디에서는 팀원별 기록을 모아 연습할 유형을 추천하고, 팀의 난이도와 이미 푼 문제를 고려해 다음 미션 후보를 고릅니다. 학습 로드맵에서는 선수 개념을 확인하고, 모의고사나 친구와의 1대1 배틀로 연습할 수 있습니다.</li><li><b>틀린 풀이도 남기는 확장 프로그램</b>백준허브도 검토했지만, 스터디에서 틀린 시도까지 리뷰할 수 있도록 웹과 연동되는 확장 프로그램을 직접 만들었습니다. 백준과 SWEA에서 오답 코드도 GitHub에 남길 수 있고, 웹 서버는 푸시 웹훅을 받아 풀이 이력과 미션 진행률을 갱신합니다. 이미 받은 전송 ID는 수신 단계에서 걸러냅니다.</li><li><b>코드 한 줄에서 시작하는 리뷰</b>AI가 분석한 코드에 마우스를 올리면 해당 라인에서 쓰인 변수의 역할과 함수의 의도를 확인할 수 있습니다. 리뷰어는 복잡도 분석과 개선 제안을 참고해 의견을 남길 수 있습니다. 코드가 왜 틀렸는지 알기 어려울 때는 AI에게 반례를 요청할 수 있습니다. 더 많은 의견이 필요한 풀이는 전체 게시판에도 공유할 수 있습니다.</li><li><b>스터디원이 함께 모으고 쓰는 도토리</b>팀원이 문제를 맞히면 팀 창고에 도토리가 쌓입니다. 다른 팀원도 이 도토리로 AI 튜터에게 질문할 수 있으며, 질문 한 번에 3개를 사용합니다. 창고에는 누가 얼마나 적립하고 사용했는지 기록합니다.</li><li><b>닉네임 효과로 남기는 개인의 성취</b>팀 단위 재화인 도토리와 별개로, 개인 재화 '로그'를 모아 상점에서 닉네임 효과를 구매할 수 있습니다. 오류를 제보하거나 서비스 개선에 기여한 사람에게는 전용 효과를 지급했습니다.</li></ul></div></details><details class="project-detail"><summary>트러블슈팅</summary><div class="detail-copy"><ul class="case-list"><li><b>MySQL 바이너리 로그로 운영 테이블 37개 시점 복구(PITR)</b>배포 직후 운영 테이블이 사라졌고 별도 백업은 없었습니다. 바이너리 로그에서 DROP TABLE 직전까지의 변경을 재생해 약 4시간 만에 복구했습니다. 이후 운영 환경에서 Flyway의 clean을 비활성화했습니다. <a class="dash-recovery-link" href="https://funczun.tistory.com/144" target="_blank" rel="noopener noreferrer">복구 기록 전문 ↗</a></li><li><b>미션 목록의 N+1 해소 · 쿼리 100회 이상 → 약 3회</b>미션 10개에 팀원 6명이면 제출 상태를 확인하는 쿼리만 120회 이상 발생했습니다. 미션 ID를 IN 조건으로 넘겨 제출 내역을 한 번에 읽고, Java에서 미션·회원별로 묶어 진행률을 계산했습니다.</li><li><b>백준의 '채점 중'이 최종 결과로 기록된 이유</b>부분 점수를 판별하던 조건이 '점' 한 글자라서 '채점 중'도 통과했습니다. 숫자 뒤에 '점'이 붙어야 부분 점수로 인정하고, 대기 시간 안에 결과가 확정되지 않으면 업로드를 중단하도록 고쳤습니다.</li><li><b>PC를 바꾸자 풀이 기록이 끊긴 이유</b>다른 PC에서 풀이가 기록되지 않는다는 문의가 있었습니다. 웹이 확장 프로그램에 설치 여부와 연결된 저장소를 요청해 필요한 설정을 안내하도록 개선했습니다. 서버에서도 웹훅 등록 상태를 확인해 중간에 멈춘 설정을 이어갈 수 있게 했습니다.</li><li><b>SWEA 문제 제목에 쉼표가 있으면 누락되던 실행 시간과 메모리</b>웹 서버가 SWEA 커밋 메시지의 첫 쉼표를 제목의 끝으로 읽어 실행 시간과 메모리를 추출하지 못했습니다. 제목 뒤의 시간·메모리 표식을 기준으로 읽도록 고치고, 쉼표가 두 개 들어간 실제 제목을 회귀 테스트에 추가했습니다.</li><li><b>한국 시간 오전 9시 이전 풀이가 전날로 표시된 이유</b>화면에는 현지 날짜를 표시하면서 필터는 UTC 날짜로 비교해, 한국 시간 오전 9시 이전 기록이 전날로 분류됐습니다. 선택한 날짜와 풀이 날짜를 모두 현지 시간 기준으로 비교하도록 고쳤습니다.</li></ul></div></details></div></div></div>
+    </article>
+    <article class="project-case" id="nookeep" aria-labelledby="nookeep-title">
+     <p class="project-kicker">사진 다이어리</p>
+     <div class="project-columns"><div class="project-text-column"><header class="project-intro"><div class="project-title-row"><h3 id="nookeep-title">누킵 Nookeep</h3><span class="project-status">운영 중</span></div>
+         <p class="project-lead">사진 속 사물을 스티커로 모으는 사진 다이어리입니다. 오늘의 상자를 꾸며 인스타그램 스토리에 공유하고, 모아 둔 스티커로 친구에게 보낼 편지도 꾸밀 수 있습니다.</p><dl class="project-facts"><div><dt>기간</dt><dd>2026.09 — 현재</dd></div><div><dt>운영</dt><dd>2026.11 — 현재</dd></div><div><dt>참여</dt><dd>개인 개발 · 운영</dd></div></dl></header><div class="project-tech"><div class="project-stack-list"><h4>사용 기술</h4><div class="tech-group"><p class="project-stack-label" id="nook-platform-0">Android</p><ul aria-labelledby="nook-platform-0"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="nookeep-tech-0-0"><img loading="lazy" src="assets/stack/kotlin.svg" width="16" height="16" alt="">Kotlin · Jetpack Compose</button><span class="tech-note" id="nookeep-tech-0-0" hidden><strong>Kotlin · Jetpack Compose</strong>촬영한 피사체 선택부터 상자 편집까지 Kotlin과 Jetpack Compose로 구현했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="nookeep-tech-0-1"><img loading="lazy" src="assets/stack/google.svg" width="16" height="16" alt="">ML Kit</button><span class="tech-note" id="nookeep-tech-0-1" hidden><strong>ML Kit</strong>사진 속 피사체를 개별 마스크로 분리합니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="nookeep-tech-0-2"><img loading="lazy" src="assets/stack/mediapipe.svg" width="16" height="16" alt="">MediaPipe MagicTouch</button><span class="tech-note" id="nookeep-tech-0-2" hidden><strong>MediaPipe MagicTouch</strong>사용자가 가리킨 부분을 기준으로 선택한 피사체의 마스크를 보정합니다.</span></li></ul></div><div class="tech-group"><p class="project-stack-label" id="nook-platform-1">iOS</p><ul aria-labelledby="nook-platform-1"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="nookeep-tech-1-0"><img loading="lazy" src="assets/stack/swift.svg" width="16" height="16" alt="">Swift · SwiftUI</button><span class="tech-note" id="nookeep-tech-1-0" hidden><strong>Swift · SwiftUI</strong>아이폰과 아이패드의 상자 편집 화면을 네이티브로 구현했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="nookeep-tech-1-1"><img loading="lazy" src="assets/stack/apple.svg" width="16" height="16" alt="">Vision</button><span class="tech-note" id="nookeep-tech-1-1" hidden><strong>Vision</strong>사진에서 전경 피사체별 마스크를 생성해 사용자가 고른 사물을 오립니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="nookeep-tech-1-2"><img loading="lazy" src="assets/stack/apple.svg" width="16" height="16" alt="">Core Motion</button><span class="tech-note" id="nookeep-tech-1-2" hidden><strong>Core Motion</strong>기기의 중력 방향을 화면 좌표로 변환해 상자 안 스티커의 움직임에 반영합니다.</span></li></ul></div></div></div></div>
+     <div class="project-media-column"><div class="project-exhibit"><figure class="nook-strip" aria-label="누킵 Google Play 스크린샷"><div class="nook-viewport" tabindex="0" role="group" aria-label="누킵 앱 화면 4장"><div class="nook-sequence"><img src="assets/projects/nookeep/store-camera.webp" alt="소중한 순간을 찍어요. 카메라로 컵을 촬영하는 화면" width="540" height="960" loading="lazy" decoding="async"><img src="assets/projects/nookeep/store-box.webp" alt="오늘의 상자에 담아요. 사진에서 오려 낸 사물을 모은 상자" width="540" height="960" loading="lazy" decoding="async"><img src="assets/projects/nookeep/store-library.webp" alt="좋아하는 걸 모아요. 날짜별 스티커 보관함" width="540" height="960" loading="lazy" decoding="async"><img src="assets/projects/nookeep/store-export.webp" alt="꾸민 상자를 공유해요. 완성한 상자의 이미지 내보내기" width="540" height="960" loading="lazy" decoding="async"></div></div><button type="button" hidden aria-label="화면 자동 이동 일시정지"><svg class="gallery-pause-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><rect x="3" y="2" width="3.5" height="12" rx=".7"/><rect x="9.5" y="2" width="3.5" height="12" rx=".7"/></svg><svg class="gallery-play-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M4 2.4v11.2L13 8z"/></svg></button></figure></div><div class="project-details"><details class="project-detail"><summary>제품 설계</summary><div class="detail-copy"><ul class="case-list"><li><b>사물을 모아 만드는 오늘의 상자</b>사진에서 간직하고 싶은 사물을 골라 상자를 꾸밉니다. 그날의 기분도 짧게 적어 두고, 보관함에서 날짜별로 다시 열어볼 수 있습니다.</li><li><b>종이비행기로 접어 보내는 편지</b>편지지를 골라 스티커로 꾸미고 그 위에 글을 씁니다. 완성한 편지를 종이비행기로 접어 친구에게 보냅니다. 친구는 우체통에서 편지를 펼쳐 봅니다.</li></ul></div></details><details class="project-detail"><summary>구현 과정</summary><div class="detail-copy"><ul class="case-list"><li><b>기울이면 움직이고, 고정하면 그대로 남는 상자</b>움직이기 모드에서는 기울기에 따라 스티커가 굴러갑니다. 고정하기 모드에서는 손으로 놓은 자리를 저장해, 다른 날 상자를 다시 열어도 같은 배치를 볼 수 있습니다.</li><li><b>편지 재전송 시 중복 발송 방지</b>보내기를 누르면 완성한 편지 이미지와 수신자, 요청 키를 기기에 먼저 저장합니다. 연결이 끊겨 다시 보내더라도 같은 요청 키를 사용해 편지가 두 번 접수되는 일을 막습니다.</li></ul></div></details><details class="project-detail"><summary>트러블슈팅</summary><div class="detail-copy"><ul class="case-list"><li><b>자동 추출은 ML Kit, 지우기와 복원은 MagicTouch</b>ML Kit의 자동 추출만으로는 원하는 부분을 지우거나 되살리기 어려웠습니다. Android 9 이상에서 편집에는 사용자의 획을 입력받는 MagicTouch를 도입했습니다. 선택한 사물의 마스크만 갱신하고, 키보드 일부를 지웠다 복원한 뒤 두 사물이 각각 저장되는지 확인했습니다.</li></ul></div></details><details class="project-detail"><summary>연계 웹 서비스</summary><div class="detail-copy"><div class="web-stories">
+          <a href="https://nookeep.com/" target="_blank" rel="noopener noreferrer"><img src="assets/projects/nookeep/kimneuk-chat.webp" alt="말해 봐. 듣고는 있어. 김늑의 얼굴과 대화 입력창" width="1007" height="530" loading="lazy"><h4>김늑과 데이트하기 <span>↗</span></h4><p>말을 걸면 김늑이 표정과 몸짓으로 답합니다. 반응 영상이 끝날 때까지 기다렸다가 마지막 메시지만 AI로 분류해, 동작을 끊지 않고 추론 호출도 줄였습니다.</p></a>
+          <a href="https://snow.nookeep.com/" target="_blank" rel="noopener noreferrer"><img src="assets/projects/nookeep/meet-my-snowman.webp" alt="눈밭에 세운 눈사람" loading="lazy"><h4>Meet My Snowman <span>↗</span></h4><p>직접 만든 눈사람을 공유하면 친구들이 눈밭에 편지를 남깁니다. 크리스마스이브가 되면 모아 둔 편지를 열어 볼 수 있습니다.</p></a>
+        </div></div></details></div></div></div>
+    </article>
+    <article class="project-case" id="consult" aria-labelledby="consult-title">
+     <p class="project-kicker">고용보험 법령 검색</p>
+     <div class="project-columns"><div class="project-text-column"><header class="project-intro"><div class="project-title-row"><h3 id="consult-title">실업급여 상담 AI</h3><span class="project-status">개발 중</span></div>
+         <p class="project-lead">퇴사 사유와 근무 이력을 바탕으로 실업급여 수급 자격, 예상 금액, 신청 절차를 안내합니다. 답변에는 판단의 근거가 된 법령 조문을 함께 제시합니다.</p><dl class="project-facts"><div><dt>기간</dt><dd>2026.10 — 현재</dd></div><div><dt>참여</dt><dd>개인 개발</dd></div></dl></header><div class="project-tech"><div><div class="tech-group"><h4>사용 기술</h4><p class="project-stack-label dash-stack-heading" id="consult-stack"><a href="https://github.com/utact/kr-employment-ontology" aria-label="고용보험 온톨로지 GitHub 저장소" target="_blank" rel="noopener noreferrer"><svg class="link-icon" viewbox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg>고용보험 온톨로지</a></p><ul aria-labelledby="consult-stack"><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="consult-tech-0"><img loading="lazy" src="assets/stack/wiki.svg" width="16" height="16" alt="">LinkML</button><span class="tech-note" id="consult-tech-0" hidden><strong>LinkML</strong>급여·요건·증빙과 근거 조문 사이의 관계를 스키마로 정의했습니다.</span></li><li><button type="button" class="tech-chip" aria-expanded="false" aria-controls="consult-tech-1"><img loading="lazy" src="assets/stack/graph.svg" width="16" height="16" alt="">RDF · SPARQL</button><span class="tech-note" id="consult-tech-1" hidden><strong>RDF · SPARQL</strong>위키의 지식과 인용을 RDF로 변환하고, SPARQL 질의로 요건과 근거 조문이 연결되는지 확인합니다.</span></li></ul></div></div></div></div>
+     <div class="project-media-column"><div class="project-exhibit"><figure class="embedded-demo"><video controls playsinline preload="none" poster="assets/projects/employment-ai/demo-poster.webp" aria-label="이직일에 따른 실업급여 상담 결과 비교" src="assets/projects/employment-ai/demo.mp4"></video><figcaption>이직일에 따른 구직급여 상한액과 근거 조문 <a class="video-fallback" hidden href="https://github.com/utact/kr-employment-ontology/blob/main/docs/assets/demo.mp4" target="_blank" rel="noopener noreferrer">영상 원본 열기 ↗</a></figcaption></figure></div><div class="project-details"><details class="project-detail"><summary>기획 배경</summary><div class="detail-copy"><ul class="case-list"><li><b>이직일을 바꿔도 상한액 안내는 같았습니다</b>고용노동부 AI 노동법 상담에 근무 조건이 같은 두 사례를 물었습니다. 이직일에 따라 적용할 규정이 달라지는데도 두 답변은 같은 금액을 안내했습니다.</li></ul></div></details><details class="project-detail"><summary>구현 과정</summary><div class="detail-copy"><ul class="case-list"><li><b>요건과 계산 규칙에서 근거 조문까지</b>법령 원문은 버전별로 보관하고 수급 요건·증빙·계산 규칙을 해당 조·항·호에 연결했습니다. 이직 당시 적용되는 규정을 찾을 수 있도록 과거 시행본과 경과조치도 함께 남겼습니다.</li><li><b>상한액 계산과 답변 생성의 분리</b>비교 화면에서는 이직일에 맞는 규칙을 골라 서버에서 상한액을 계산합니다. 모델에는 계산 결과와 해당 조문을 전달하고, 응답의 금액과 근거 ID를 확인한 뒤 표시합니다.</li></ul></div></details></div></div></div>
+    </article>
+    </div></section>
+    <section class="writing content" id="writing" aria-labelledby="writing-title">
+      <div class="wrap">
+        <span id="post-new-tab" hidden>새 탭에서 열림</span>
+        <div class="post-heading">
+          <h2 id="writing-title">포스트</h2>
+          
+        </div>
+        <div class="post-viewport">
+        <ul class="post-strip" id="post-strip" aria-label="추천 포스트">
+          <li>
+            <article><a class="post-card" href="https://funczun.tistory.com/144" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab" aria-labelledby="post-title-144">
+              <div class="post-cover art-db" aria-hidden="true"><img class="cover-visual" src="assets/posts/database-recovery.webp" alt="" loading="lazy" decoding="async"><div class="cover-signal terminal-readout"><code>mysql&gt; SHOW TABLES;</code><samp>Empty set</samp></div></div>
+              <time datetime="2026-05-17">2026.05.17</time>
+              <h3 id="post-title-144">하루 평균 93명이 쓰던 서비스의 운영 DB가 사라졌다</h3>
+            </a></article>
+          </li>
+          <li>
+            <article><a class="post-card" href="https://funczun.tistory.com/130" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab" aria-labelledby="post-title-130">
+              <div class="post-cover art-docker" aria-hidden="true"><img class="cover-visual" src="assets/posts/docker-whale.svg" alt="" loading="lazy" decoding="async"><div class="compose-pair"><div class="compose-file"><span>compose.yaml</span><code>image: <b>mysql:8.0</b></code></div><div class="compose-file"><span>compose.yaml</span><code>image: <b>mysql:5.7</b></code></div></div></div>
+              <time datetime="2025-07-23">2025.07.23</time>
+              <h3 id="post-title-130">개인 프로젝트에 도커를 왜 사용할까?</h3>
+            </a></article>
+          </li>
+          <li>
+            <article><a class="post-card" href="https://funczun.tistory.com/133" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab" aria-labelledby="post-title-133">
+              <div class="post-cover art-objects" aria-hidden="true"><img class="cover-visual" src="assets/posts/object-oriented-design.webp" alt="" loading="lazy" decoding="async"><pre class="order-diff"><code class="removed">order.setStatus(
+  OrderStatus.CANCELLED);</code><code class="added">order.cancel();</code></pre></div>
+              <time datetime="2025-07-26">2025.07.26</time>
+              <h3 id="post-title-133">당신의 서비스는 <span class="post-phrase"><span class="post-quote">“</span>객체 지향<span class="post-quote">”</span>인가?</span></h3>
+            </a></article>
+          </li>
+          <li>
+            <article><a class="post-card" href="https://funczun.tistory.com/136" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab" aria-labelledby="post-title-136">
+              <div class="post-cover art-generics" aria-hidden="true"><img class="cover-visual" src="assets/posts/type-erasure.webp" alt="" loading="lazy" decoding="async"><div class="cover-signal type-erasure"><code>List<span>&lt;String&gt;</span></code><code>List<span>&lt;Integer&gt;</span></code><strong>↳ List</strong></div></div>
+              <time datetime="2025-07-30">2025.07.30</time>
+              <h3 id="post-title-136"><code>List&lt;String&gt;</code>의 <code>String</code>은 왜 사라질까?</h3>
+            </a></article>
+          </li>
+          <li>
+            <article><a class="post-card" href="https://funczun.tistory.com/146" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab" aria-labelledby="post-title-146">
+              <div class="post-cover art-harness" aria-hidden="true"><img class="cover-visual" src="assets/posts/agent-harness.webp" alt="" loading="lazy" decoding="async"><div class="cover-signal eval-flow"><b>반복된 수정·거절</b><span>재현 과제 + 채점 기준</span><strong>↳ 회귀 평가</strong></div></div>
+              <time datetime="2026-09-26">2026.09.26</time>
+              <h3 id="post-title-146">Human-in-the-loop는 단순한 승인 절차가 아니다</h3>
+            </a></article>
+          </li>
+          <li>
+            <article><a class="post-card" href="https://funczun.tistory.com/135" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab" aria-labelledby="post-title-135">
+              <div class="post-cover art-array" aria-hidden="true"><img class="cover-visual" src="assets/posts/dynamic-array.webp" alt="" loading="lazy" decoding="async"><div class="cover-signal heap-trace"><code>ArrayList.grow()</code><strong>OutOfMemoryError</strong><samp>Java heap space</samp></div></div>
+              <time datetime="2025-07-29">2025.07.29</time>
+              <h3 id="post-title-135">ArrayList에 정수 21억 개를 넣어봤다</h3>
+            </a></article>
+          </li>
+        </ul>
+        <div class="post-actions" hidden>
+            <button type="button" class="post-prev" aria-label="이전 포스트" aria-controls="post-strip" disabled><span aria-hidden="true">«</span></button>
+            <button type="button" class="post-next" aria-label="다음 포스트" aria-controls="post-strip"><span aria-hidden="true">»</span></button>
+          </div>
+        </div>
+        <div class="post-footer"><a href="https://funczun.tistory.com/" target="_blank" rel="noopener noreferrer" aria-describedby="post-new-tab">블로그 전체 글 보기 <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+    <section id="background" class="paper content honors" aria-labelledby="background-title"><div class="wrap section-layout">
+<h2 id="background-title">이력</h2>
+<div>
+<div class="record-group"><h3>학력</h3>
+<article class="history-row" id="cnu"><p class="history-period">2023.03 — 2025.08</p><img loading="lazy" class="history-logo" src="assets/organizations/cnu-mark.webp" alt="" decoding="async"><div class="history-copy"><h4>충남대학교 경영학과</h4><p>졸업 · 전공 평점 3.83 / 4.5</p><details><summary>전공 과목별 학점·성적</summary><table class="course-table" aria-label="충남대학교 주요 전공 수강과목"><thead><tr><th scope="col">과목명</th><th scope="col">이수학점</th><th scope="col">성적</th></tr></thead>
+<tbody><tr><th colspan="3" scope="rowgroup">2023년 1학기</th></tr>
+<tr><th scope="row">원가회계 1</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">경영과사회</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">경영정보시스템</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">마케팅조사</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">조직행위론</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">기업가정신1</th><td>3</td><td>B0</td></tr>
+</tbody>
+<tbody><tr><th colspan="3" scope="rowgroup">2023년 2학기</th></tr>
+<tr><th scope="row">글로벌경영론(영어강의)</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">운영관리</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">가격관리</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">투자론</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">조직구조론</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">금융기관론</th><td>3</td><td>B0</td></tr>
+</tbody>
+<tbody><tr><th colspan="3" scope="rowgroup">2024년 1학기</th></tr>
+<tr><th scope="row">서비스운영관리</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">원가회계2</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">회계이론</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">서비스마케팅(영어강의)</th><td>3</td><td>B+</td></tr>
+<tr><th scope="row">노사관계론</th><td>3</td><td>B+</td></tr>
+</tbody>
+<tbody><tr><th colspan="3" scope="rowgroup">2025년 1학기</th></tr>
+<tr><th scope="row">리더십</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">세무회계1</th><td>3</td><td>A0</td></tr>
+<tr><th scope="row">소비자행동론</th><td>3</td><td>B+</td></tr>
+</tbody></table></details></div></article>
+<article class="history-row" id="hnu"><p class="history-period">2018.03 — 2023.02</p><img loading="lazy" class="history-logo" src="assets/organizations/hnu-mark.webp" alt="" decoding="async"><div class="history-copy"><h4>한남대학교 경영학과</h4><p>중퇴 · 전공 평점 4.33 / 4.5</p><details><summary>전공 과목별 학점·성적</summary><table class="course-table" aria-label="한남대학교 주요 전공 수강과목"><thead><tr><th scope="col">과목명</th><th scope="col">이수학점</th><th scope="col">성적</th></tr></thead>
+<tbody><tr><th colspan="3" scope="rowgroup">2021년 1학기</th></tr>
+<tr><th scope="row">재무회계</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">마케팅관리</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">인적자원관리</th><td>3</td><td>B+</td></tr>
+</tbody>
+<tbody><tr><th colspan="3" scope="rowgroup">2021년 2학기</th></tr>
+<tr><th scope="row">기술경영</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">재무관리</th><td>3</td><td>A+</td></tr>
+<tr><th scope="row">비즈니스잉글리시Ⅱ</th><td>3</td><td>A+</td></tr>
+</tbody></table></details></div></article>
+</div>
+<div class="record-group"><h3>교육</h3>
+<article class="history-row" id="ssafy"><p class="history-period">2025.07 — 2026.06</p><img loading="lazy" class="history-logo" src="assets/organizations/ssafy-mark.webp" alt="" decoding="async"><div class="history-copy"><h4>삼성청년 SW·AI 아카데미 14기</h4><p>대전캠퍼스 자바 트랙 · 웹 개발 및 AI 실습</p><p>최우수 수료(상위 5% 이내) · <button type="button" class="certificate-open" aria-haspopup="dialog" aria-controls="certificate-dialog">수료증 보기</button></p></div></article>
+</div>
+<div class="record-group"><h3>활동</h3>
+<article class="history-row" id="club"><p class="history-period">2025.02 — 2025.08</p><img loading="lazy" class="history-logo" src="assets/organizations/likelion.svg" alt="" decoding="async"><div class="history-copy"><h4>멋쟁이사자처럼 13기</h4><p>충남대학교 백엔드 트랙 · 정기 세션 진행 및 코드 리뷰</p></div></article>
+<article class="history-row" id="cafe"><p class="history-period">2022.02 — 2025.05</p><img loading="lazy" class="history-logo" src="assets/organizations/guns-up-cafe.webp" alt="" decoding="async"><div class="history-copy"><h4>건즈업 모바일 커뮤니티 운영</h4><p>네이버 카페 개설·운영 · 최대 회원 약 9,000명</p></div></article>
+</div>
+<div class="record-group"><h3>병역</h3>
+<article class="history-row" id="service"><p class="history-period">2019.05 — 2021.03</p><img loading="lazy" class="history-logo" src="assets/organizations/17th-fighter-wing.webp" alt="" decoding="async"><div class="history-copy"><h4>공군 제17전투비행단</h4><p>군사경찰 · 병장 만기 전역</p><p class="service-honor"><strong>공군작전사령관상</strong> · 공용화기 사격대회 K-6 부문 전국 1위</p></div></article>
+</div>
+<div class="record-group"><h3 id="cert-list">자격·어학</h3>
+<article class="qualification" id="cert-adsp"><h4>ADsP <span>데이터분석 준전문가</span></h4><div class="qualification-meta"><span>한국데이터산업진흥원</span><time datetime="2025-03-21">2025.03.21</time></div></article>
+<article class="qualification" id="cert-sqld"><h4>SQLD <span>SQL 개발자</span></h4><div class="qualification-meta"><span>한국데이터산업진흥원</span><time datetime="2024-12-13">2024.12.13</time></div></article>
+<article class="qualification" id="cert-opic"><h4>OPIc <span>영어 · IM1</span></h4><div class="qualification-meta"><span>ACTFL</span><time datetime="2026-01-18">2026.01.18</time></div></article>
+</div>
+</div></div></section>
+    <section id="credentials" class="paper content honors" aria-labelledby="honors-title"><div class="wrap section-layout">
+<h2 id="honors-title">수상</h2>
+<div>
+<div class="award-year"><h3>2026</h3><div><div class="award-event"><article class="award-entry"><h4>대전지방고용노동청장상</h4><p>삼성청년 SW·AI 아카데미 대전 지역 우수 수료생 선정</p></article>
+<div class="issuer"><span>대전지방고용노동청</span><time datetime="2026-06-30">2026.06.30</time></div></div>
+<div class="award-event"><article class="award-entry"><h4>삼성전자 VD·네트워크사업부 연계 프로젝트 우수상</h4><p><a href="#rf">기지국 RU의 RF 시험 데이터 중앙화</a> · 최종 3위</p></article>
+<div class="issuer"><span>삼성전자</span><time datetime="2026-04-03">2026.04.03</time></div></div></div></div>
+<div class="award-year"><h3>2025</h3><div><div class="award-event"><article class="award-entry"><h4>삼성청년 SW·AI 아카데미 프로젝트 최우수상</h4><p><a href="#dash">알고리즘 학습 플랫폼 대시허브</a> · 대전 3반 1위</p></article>
+<article class="award-entry"><h4>삼성청년 SW·AI 아카데미 성적우수상</h4><p>1학기 코딩 집중과정 종합성적 대전 3반 1위</p></article>
+<div class="issuer"><span>삼성전자</span><time datetime="2025-12-26">2025.12.26</time></div></div></div></div>
+<div class="award-year"><h3>2024</h3><div><div class="award-event"><article class="award-entry"><h4>재정 데이터 분석 미니 프로젝트 최우수상</h4><p>개인형 이동장치 교통사고 취약지역 선정 및 예산 배분 방안 제안 · 1위</p></article>
+<div class="issuer"><span>한국재정정보원</span><time datetime="2024-12-06">2024.12.06</time></div></div></div></div>
+</div></div></section>
+  <dialog id="certificate-dialog" class="certificate-dialog" aria-labelledby="certificate-title"><div class="certificate-toolbar"><h2 id="certificate-title">SSAFY 14기 수료증</h2><form method="dialog"><button type="submit" autofocus>닫기</button></form></div><div class="certificate-pages" tabindex="0" role="region" aria-label="수료증과 교과목 이수내역"><img data-src="assets/credentials/ssafy-certificate.webp" width="1191" height="1684" alt="SSAFY 14기 수료증. 유승준, 1,628시간 이수, 최우수 등급(상위 5% 이내).">
+<img data-src="assets/credentials/ssafy-course-record.webp" width="1192" height="1684" alt="교과목 이수내역. 1학기 코딩 집중교육 828시간, 2학기 심화 프로젝트 800시간."></div></dialog>
+  </main>
+  <footer id="footer"><canvas class="pixel-shore" aria-hidden="true"></canvas><div class="wrap foot"><span class="signature">utact.</span><p class="foot-motto">시작은 가볍게 책임은 무겁게</p><a href="#intro"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-up"></use></svg>맨 위로</a></div></footer>
+</body>
+</html>

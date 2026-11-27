@@ -1,0 +1,10 @@
+# Local source media and generated previews
+/.local/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
