@@ -3,6 +3,7 @@ import base64
 import mimetypes
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
@@ -29,7 +30,7 @@ def main():
     page = re.sub(r'\b(src|href|poster|data-src|data-full-src)="(assets/[^"]+|favicon\.ico)"', resource, page)
 
     def stylesheet(match):
-        path = WEB / match[1]
+        path = WEB / urlsplit(match[1]).path
         css = path.read_text(encoding="utf-8")
         css = re.sub(r'url\("([.][.]/assets/[^"]+)"\)', lambda m: f'url("{embedded(path.parent / m[1])}")', css)
         return "<style>\n" + css + "\n</style>"
@@ -37,7 +38,7 @@ def main():
     page = re.sub(r'<link rel="stylesheet" href="([^"]+)">', stylesheet, page)
     scripts = re.findall(r'<script defer src="([^"]+)"></script>', page)
     page = re.sub(r'\s*<script defer src="[^"]+"></script>', "", page)
-    code = "\n".join("<script>\n" + (WEB / name).read_text(encoding="utf-8") + "\n</script>" for name in scripts)
+    code = "\n".join("<script>\n" + (WEB / urlsplit(name).path).read_text(encoding="utf-8") + "\n</script>" for name in scripts)
     page = page.replace("</body>", code + "\n</body>")
     output = ROOT / ".local/portfolio-preview.html"
     output.parent.mkdir(exist_ok=True)
