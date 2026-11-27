@@ -217,8 +217,31 @@ function initPostCarousel() {
   new ResizeObserver(updateButtons).observe(strip);
   controls.hidden = false;
   updateButtons();
+
+  if ('IntersectionObserver' in window) {
+    const hint = new IntersectionObserver(([entry]) => {
+      if (entry.intersectionRatio < 0.5) return;
+      hint.disconnect();
+      if (next.disabled || !previous.disabled || next.matches(':hover, :focus-visible') ||
+          matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      next.firstElementChild.animate([
+        { translate:'0 0' }, { translate:'5px 0', offset:0.45 }, { translate:'0 0' }
+      ], { duration:620, easing:'ease-in-out' });
+    }, { threshold:0.5 });
+    hint.observe(strip);
+  }
 }
 initPostCarousel();
+
+const briefing = document.querySelector('.plugin-demo video');
+if (briefing && 'IntersectionObserver' in window && matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  const observer = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting) return;
+    observer.disconnect();
+    briefing.play().catch(() => {});
+  }, { threshold:0.25 });
+  observer.observe(briefing);
+}
 
 const demo = document.querySelector('.embedded-demo video');
 function showVideoSource() {
