@@ -6,7 +6,7 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-663399?style=flat&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=222222)
+![JavaScript](.github/badges/javascript.svg)
 
 ## Local Preview
 
